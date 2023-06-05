@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://assets/Backgrounds/purple.png" type="Texture" id=1]
+[ext_resource path="res://sky.jpg" type="Texture" id=1]
 [ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://characters/Obstacles/ObstaclesSpawner.tscn" type="PackedScene" id=3]
+[ext_resource path="res://characters/Obstacles/CloudSpawner.tscn" type="PackedScene" id=4]
 
 [node name="Earth" type="Node2D"]
 
@@ -11,5 +13,9 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 540, 960 )
 
+[node name="ObstaclesSpawner" parent="." instance=ExtResource( 3 )]
+
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 271, 775 )
+
+[node name="CloudSpawner" parent="." instance=ExtResource( 4 )]
