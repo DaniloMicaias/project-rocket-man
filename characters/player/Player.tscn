@@ -4,6 +4,8 @@
 [ext_resource path="res://characters/player/Player.gd" type="Script" id=2]
 
 [node name="Player" type="Area2D"]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -12,3 +14,5 @@ texture = ExtResource( 1 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PoolVector2Array( -42, 17, -43, 119, -37, 128, -28, 128, -22, 120, -22, 109, -12, 131, 12, 131, 22, 108, 22, 119, 28, 128, 37, 128, 43, 119, 43, 37, 42, 20, 34, 9, 30, 9, 25, 17, 25, -76, 13, -108, 1, -131, -2, -130, -12, -109, -24, -77, -24, 18, -29, 12, -32, 9, -36, 10 )
+
+[connection signal="area_entered" from="." to="." method="_on_Player_area_entered"]

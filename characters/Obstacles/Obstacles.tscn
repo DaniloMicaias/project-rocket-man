@@ -44,17 +44,21 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 19.5, 12.5 )
 
-[node name="Obstacles" type="Area2D"]
+[node name="Obstacles" type="Area2D" groups=["obstacles"]]
+collision_layer = 4
+collision_mask = 11
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 7 )
 animation = "walking"
-frame = 2
+frame = 4
 speed_scale = 1.75
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -0.5, 5.5 )
 shape = SubResource( 8 )
+
+[connection signal="area_entered" from="." to="." method="_on_Obstacles_area_entered"]
