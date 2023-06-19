@@ -1,6 +1,7 @@
 extends Node2D
 
 var spawn_positions = null
+onready var text = find_node("NinePatchRect/RichTextLabel")
 
 var Obstacle = preload("res://characters/Obstacles/Obstacles.tscn")
 

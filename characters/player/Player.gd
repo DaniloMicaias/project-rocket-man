@@ -1,6 +1,8 @@
 extends Area2D
 class_name Player
 
+onready var game_over := $NinePatchRect
+
 var speed = 300
 
 var input_vector = Vector2.ZERO
@@ -16,7 +18,7 @@ func take_damage(damage):
 	hp -= damage
 	if hp <= 0:
 		queue_free()
-
+		
 func _on_Player_area_entered(area):
 	if area.is_in_group("obstacles"):
 		area.take_damage(1)
