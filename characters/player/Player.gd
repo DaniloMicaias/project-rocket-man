@@ -16,6 +16,7 @@ func _physics_process(delta):
 
 func take_damage(damage):
 	hp -= damage
+	LiveCounter.lives -= damage
 	if hp <= 0:
 		queue_free()
 		

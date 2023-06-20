@@ -18,6 +18,7 @@ func _input(event):
 func show_message() -> void:
 	if(msg_queue.size() == 0):
 		hide()
+		get_tree().change_scene("res://Earth.tscn")
 		return
 	
 	var _msg: String = msg_queue.pop_front()

@@ -1,4 +1,4 @@
-extends NinePatchRect
+extends Control
 
 onready var text := $RichTextLabel
 
@@ -22,3 +22,10 @@ func show_message() -> void:
 	text.bbcode_text = _msg
 
 
+
+
+func _on_PlayAgain_pressed():
+	get_tree().change_scene("res://Earth.tscn")
+
+func _on_QuitButton_pressed():
+	get_tree().quit()
