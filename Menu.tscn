@@ -54,9 +54,9 @@ margin_bottom = 20.0
 text = "Iniciar"
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
-margin_top = 40.0
+margin_top = 24.0
 margin_right = 74.0
-margin_bottom = 60.0
+margin_bottom = 44.0
 text = "Sair"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]

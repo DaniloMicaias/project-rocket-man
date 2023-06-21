@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://assets/Backgrounds/blue.png" type="Texture" id=1]
 [ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Lives.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/Backgrounds/purple.png" type="Texture" id=6]
 [ext_resource path="res://ProgressBar.tscn" type="PackedScene" id=7]
+[ext_resource path="res://project-rocket-man-song-during-game.mp3" type="AudioStream" id=8]
 
 [sub_resource type="Shader" id=3]
 code = "shader_type canvas_item;
@@ -52,3 +53,8 @@ position = Vector2( 271, 775 )
 [node name="Lives" parent="." instance=ExtResource( 5 )]
 
 [node name="ProgressBar" parent="." instance=ExtResource( 7 )]
+
+[node name="MainSong" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = 1.0
+autoplay = true

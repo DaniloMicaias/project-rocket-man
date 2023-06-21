@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/project-rocket-man-song-during-menu.mp3-79517bb65fcbcc494837b77a6e4aa319.mp3str"
+
+[deps]
+
+source_file="res://project-rocket-man-song-during-menu.mp3"
+dest_files=[ "res://.import/project-rocket-man-song-during-menu.mp3-79517bb65fcbcc494837b77a6e4aa319.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

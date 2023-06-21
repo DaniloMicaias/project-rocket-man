@@ -20,7 +20,7 @@ shader_param/direction = Vector2( 0, -1 )
 shader_param/speed_scale = 0.5
 
 [sub_resource type="DynamicFont" id=6]
-size = 68
+size = 30
 font_data = ExtResource( 2 )
 
 [node name="VictoryScreen" type="Control"]
@@ -41,4 +41,4 @@ margin_top = 275.0
 margin_right = 479.0
 margin_bottom = 403.0
 custom_fonts/normal_font = SubResource( 6 )
-text = "Parabéns!"
+text = "Parabéns, você chegou ao fim da primeira fase!"

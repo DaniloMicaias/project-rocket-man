@@ -13,6 +13,12 @@ func _physics_process(delta):
 	input_vector.y = Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
 	
 	global_position += input_vector * speed * delta
+	
+	# limit the player area to screen only
+	var size = $Sprite.texture.get_size() * $Sprite.scale.y / 2
+	var viewRect := get_viewport_rect()
+	global_position.x = clamp(global_position.x,0+size.x,viewRect.size.x-size.x)
+	global_position.y = clamp(global_position.y,0+size.y,viewRect.size.y-size.y)
 
 func take_damage(damage):
 	hp -= damage

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/prepare-for-launch.mp3-863be65b0bafa40550971a98f852356e.mp3str"
+
+[deps]
+
+source_file="res://prepare-for-launch.mp3"
+dest_files=[ "res://.import/prepare-for-launch.mp3-863be65b0bafa40550971a98f852356e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

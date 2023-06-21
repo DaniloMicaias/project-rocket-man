@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://EightBitDragon-anqx.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://NinePatchRect.gd" type="Script" id=2]
 [ext_resource path="res://assets/Dialog/dialogBox.png" type="Texture" id=3]
 [ext_resource path="res://assets/Backgrounds/purple.png" type="Texture" id=4]
+[ext_resource path="res://project-rocket-man-song-during-menu.mp3" type="AudioStream" id=5]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
@@ -57,5 +58,10 @@ text = "Importante: Você está passando pela estratosfera no momento. Essa cama
 [node name="Timer" type="Timer" parent="NinePatchRect"]
 wait_time = 0.05
 autostart = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = 1.0
+autoplay = true
 
 [connection signal="timeout" from="NinePatchRect/Timer" to="NinePatchRect" method="_on_Timer_timeout"]

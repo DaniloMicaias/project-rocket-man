@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/project-rocket-man-song-during-game.mp3-7bc78aa8222cef9e55d54165d991017a.mp3str"
+
+[deps]
+
+source_file="res://project-rocket-man-song-during-game.mp3"
+dest_files=[ "res://.import/project-rocket-man-song-during-game.mp3-7bc78aa8222cef9e55d54165d991017a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
