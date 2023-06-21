@@ -14,19 +14,19 @@ position = Vector2( -1, 79 )
 position = Vector2( -1, 160 )
 
 [node name="SpawnPosition_03" type="Position2D" parent="SpawnPositions"]
-position = Vector2( 0, 240 )
+position = Vector2( 2, 342 )
 
 [node name="SpawnPosition_04" type="Position2D" parent="SpawnPositions"]
-position = Vector2( 3, 325 )
+position = Vector2( 3, 446 )
 
 [node name="SpawnPosition_05" type="Position2D" parent="SpawnPositions"]
-position = Vector2( -1, 427 )
+position = Vector2( -1, 553 )
 
 [node name="SpawnPosition_06" type="Position2D" parent="SpawnPositions"]
-position = Vector2( 1, 202 )
+position = Vector2( 1, 242 )
 
 [node name="SpawnPosition_07" type="Position2D" parent="SpawnPositions"]
-position = Vector2( -2, 542 )
+position = Vector2( 2, 715 )
 
 [node name="SpawnPosition_08" type="Position2D" parent="SpawnPositions"]
 position = Vector2( 2, 21 )
